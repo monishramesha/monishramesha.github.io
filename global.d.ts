@@ -66,15 +66,15 @@ interface GitHubProjects {
   };
 }
 
-/**interface ExternalProjects {
+interface ExternalProjects {
   /**
    * Header
-   
+   */
   header?: string;
 
   /**
    * Project list
-   
+   */
   projects?: {
     title: string;
     description?: string;
@@ -82,11 +82,11 @@ interface GitHubProjects {
     link: string;
   }[];
 }
-*/
+
 interface Projects {
   github?: GitHubProjects;
 
-  //external?: ExternalProjects;
+  external?: ExternalProjects;
 }
 
 interface SEO {
@@ -208,12 +208,12 @@ interface Experience {
   companyLink?: string;
 }
 
-/**interface Certification {
+interface Certification {
   body?: string;
   name?: string;
   year?: string;
   link?: string;
-}*/
+}
 
 interface Education {
   institution?: string;
@@ -222,14 +222,14 @@ interface Education {
   to: string;
 }
 
-/**interface Publication {
+interface Publication {
   title: string;
   conferenceName?: string;
   journalName?: string;
   authors?: string;
   link?: string;
   description?: string;
-}*/
+}
 
 interface GoogleAnalytics {
   /**

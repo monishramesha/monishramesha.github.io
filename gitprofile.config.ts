@@ -16,7 +16,7 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
+        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
@@ -25,34 +25,49 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['monishramesha/Blockchain-based-P2P-File-Sharing-System', 'monishramesha/Multithreaded-Online-Quiz-System', 'monishramesha/OpenWorld-DeepFakeAttribution', 'monishramesha/Restaurant-Reservation-Application', 'monishramesha/Strivers-Sheet', 'monishramesha/Tours-and-Travel-Website'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
-   
-    
+    external: {
+      header: 'My Projects',
+      // To hide the `External Projects` section, keep it empty.
+      projects: [
+        {
+          title: 'Project Name',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
+        {
+          title: 'Project Name',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
+      ],
     },
-
+  },
   seo: {
     title: 'Portfolio of Monish Ramesha',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'monish-ramesha',
-    twitter: '',
-    //mastodon: 'arifszn@mastodon.social',
+    linkedin: 'ariful-alam',
+    twitter: 'arif_szn',
     researchGate: '',
     facebook: '',
     instagram: '',
-    youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    //medium: 'arifszn',
-    //dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    //website: 'https://www.arifszn.com',
+    website: '',
     phone: '+91 8838672367',
     email: 'monishramesha@gmail.com',
   },
@@ -71,7 +86,7 @@ const CONFIG = {
     'HTML',
     'CSS'
     ],
-  experiences: [
+ experiences: [
     {
       company: 'NGN Labs',
       position: 'Research Intern',
@@ -94,12 +109,26 @@ const CONFIG = {
       to: '2021',
     }
   ],
+  // Display articles from your medium or dev account. (Optional)
+  blog: {
+    source: 'dev', // medium | dev
+    username: 'arifszn', // to hide blog section, keep it empty
+    limit: 2, // How many articles to display. Max is 10.
+  },
+  googleAnalytics: {
+    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+  },
+  // Track visitor interaction and behavior. https://www.hotjar.com
+  hotjar: {
+    id: '',
+    snippetVersion: 6,
+  },
   themeConfig: {
     defaultTheme: 'dim',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: true,
+    disableSwitch: false,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme

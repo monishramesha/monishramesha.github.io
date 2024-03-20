@@ -57,44 +57,39 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'monish-ramesha',
+    twitter: '',
+    //mastodon: 'arifszn@mastodon.social',
     researchGate: '',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    //medium: 'arifszn',
+    //dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    //website: 'https://www.arifszn.com',
+    phone: '+91 8838672367',
+    email: 'monishramesha@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
+    'C',
+    'Java',
+    'Python',
     'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
     'MySQL',
-    'PostgreSQL',
+    'Oracle SQL',
     'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
+    'HTML',
+    'CSS'
+    ],
   experiences: [
     {
       company: 'Company Name',
@@ -127,10 +122,10 @@ const CONFIG = {
       to: '2019',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Madras Institute of Technology',
+      degree: 'B.E Computer Science Engineering',
+      from: '2021',
+      to: '2025',
     },
   ],
   publications: [
@@ -156,7 +151,7 @@ const CONFIG = {
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    //username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {

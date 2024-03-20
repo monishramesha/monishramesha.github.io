@@ -78,8 +78,7 @@ const CONFIG = {
       from: 'June 2023',
       to: 'January 2024',
       companyLink: 'https://ngnlab.org',
-    },
-    
+    }
   ],
   educations: [
     {

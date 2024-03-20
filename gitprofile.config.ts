@@ -19,8 +19,8 @@ const CONFIG = {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: true, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false, // Forked projects will not be displayed if set to true.
+          projects: ['monishramesha/Strivers-Sheet','monishramesha/monishramesha.github.io','monishramesha/CLRNet'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
@@ -88,7 +88,7 @@ const CONFIG = {
       from: '2009',
       to: '2021',
     }
-  ],
+  ],/**
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
@@ -102,7 +102,7 @@ const CONFIG = {
   hotjar: {
     id: '',
     snippetVersion: 6,
-  },
+  },*/
   themeConfig: {
     defaultTheme: 'dim',
 

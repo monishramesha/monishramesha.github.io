@@ -30,7 +30,6 @@ const CONFIG = {
     },
     external: {
         },
-      ],
     },
   },
   seo: {

@@ -31,7 +31,7 @@ const CONFIG = {
    
     
     },
-  },
+
   seo: {
     title: 'Portfolio of Monish Ramesha',
     description: '',
